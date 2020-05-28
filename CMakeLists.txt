@@ -84,6 +84,8 @@ if (ARAVIS_VERSION VERSION_LESS "0.7.0")
   add_definitions(-DARAVIS_OLD_SET_FEATURE)
 else()
   add_definitions(-DARAVIS_HAVE_REGISTER_CACHE)
+endif()
+if (ARAVIS_VERSION VERSION_GREATER_EQUAL "0.8.0")
   add_definitions(-DARAVIS_HAVE_08_API)
 endif()
 
